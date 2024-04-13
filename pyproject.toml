@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "placeholder-img"
+version = "0.1"
+authors = [
+    {name = "Lee Ji-ho", email = "search5@gmail.com"},
+]
+description = "Create a placeholder image to return an image object or save the file"
+readme = "README.rst"
+requires-python = ">=3.9"
+keywords = ["one", "two"]
+license = {text = "BSD-3-Clause"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "pillow",
+]
