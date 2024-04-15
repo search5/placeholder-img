@@ -1,22 +1,12 @@
 from collections import namedtuple
 from io import BytesIO
 import os
-import sys
-import importlib
+import importlib.resources as pkg_resources
 
 from PIL import ImageFont, Image, ImageDraw, ImageColor
-import importlib._bootstrap
 
 
-def get_abs_filepath(package, path):
-    spec = importlib.util.find_spec(package)
-    mod = (sys.modules.get(package) or importlib._bootstrap._load(spec))
-    parts = path.split("/")
-    parts.insert(0, os.path.dirname(mod.__file__))
-    return os.path.join(*parts)
-
-
-FONT_PATH = get_abs_filepath('placeholder', 'public/NotoSansKR-Regular.ttf')
+FONT_PATH = pkg_resources('placeholder.public', 'NotoSansKR-Regular.ttf')
 
 
 def _parse_size(size):
