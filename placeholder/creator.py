@@ -6,7 +6,8 @@ import importlib.resources as pkg_resources
 from PIL import ImageFont, Image, ImageDraw, ImageColor
 
 
-FONT_PATH = pkg_resources('placeholder.public', 'NotoSansKR-Regular.ttf')
+FONT_PATH = pkg_resources.files('placeholder.public').joinpath('NotoSansKR-Regular.ttf')
+print(FONT_PATH)
 
 
 def _parse_size(size):

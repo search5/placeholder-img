@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "placeholder-img"
-version = "0.3"
+version = "0.4"
 authors = [
     {name = "Lee Ji-ho", email = "search5@gmail.com"}
 ]
@@ -19,6 +19,10 @@ classifiers = [
 dependencies = [
     "pillow",
 ]
+
+[project.urls]
+Repository = "https://github.com/search5/placeholder-img"
+Issues = "https://github.com/search5/placeholder-img/issues"
 
 [options]
 include-package-data = true
