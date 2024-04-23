@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "placeholder-img"
-version = "0.4"
+version = "0.5"
 authors = [
     {name = "Lee Ji-ho", email = "search5@gmail.com"}
 ]
